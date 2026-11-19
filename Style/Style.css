@@ -194,14 +194,19 @@ body.fotboll .back-btn {
     border: 2px solid #005293;
 }
 
+/* border solid gör den blåa ramen runt, 2px är tjockleken*/
+
 body.fotboll #menu {
     background: #fecb00;
 }
+/* menyrutan blir gul*/
 
 body.fotboll #menuBtn {
     background: #fecb00;
     color: #005293;
 }
+
+/* själva knappen med blå streck*/
 
 body.fotboll #menu a:hover {
     color: #005293;
@@ -219,6 +224,8 @@ body.basket header {
     background: linear-gradient(90deg, #0f2a75, #1e3a8a);
 }
 
+/*linear gradient är färgen i header*/
+
 body.basket h1 {
     color: white;
     font-size: 55px;
@@ -235,18 +242,25 @@ body.basket #menu {
     background: #1e3a8a;
 }
 
+/*menyrutan blir blå*/
+
 body.basket #menuBtn {
     background: #1e3a8a;
     color: white;
 }
+/*själva knappen e blå med vita streck*/
 
 body.basket #menu a {
     color: white;
 }
 
+/* att de är vita*/
+
 body.basket #menu a:hover {
     color: black;
 }
+
+/* att färgen blir svart istället för vit när man håller musen över*/
 
 /* NFL */
 
@@ -300,6 +314,12 @@ body.nfl #menu a:hover {
     cursor: pointer;
 }
 
+/* # för det är ett ID*/
+
+/* position att jag kan välja placering, och inte ligger där den finns i html, top och right är att jag lagt den där*/
+/* padding ger luft inne i knappen, och pointer är att den blir ett pekfinger*/
+
+
 /* Menyn */
 
 #menu {
@@ -313,20 +333,25 @@ body.nfl #menu a:hover {
     overflow: hidden;
 }
 
+/* border radius ger knappen hörn, vit bakgrund men överskrivs med. de olika flikarna, overflow så innehållet håller sig innom ramen*/
+
 #menu a {
     display: block;
     padding: 15px;
     text-decoration: none;
     transition: 0.3s;
 }
+/* gör det till menyn och att endast markerat område blir klickbart, padding så det är mellanrum mellan länkarna, 
+text decoration tar bort blå länk färgen, transistion gör över gången*/
 
 body.index #menu a,
 body.fotboll #menu a {
     color: black;
 }
+/* länkarna e svarta*/ 
 
 #menu a:hover {
     background: #f0f0f0;
     transform: translateX(5px);
 }
-
+/*gör länken ljusgrå och flyttar länken när man håller musen över*/
