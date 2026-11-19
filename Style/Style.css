@@ -108,6 +108,8 @@ body.index {
     margin-top: auto;
 }
 
+body.footer {color: white;}
+
 /*Margin top auto skickar ner den till botten av sidan*/
 
 /* Den gemensamma artikel layouten*/
@@ -121,21 +123,30 @@ body.index {
     overflow: hidden;
 }
 
+/* Max width, att artikeln aldrig går över 1000 pixlar, 20 = utrymmet över och under artikeln, auto = centrerar, border radius rundar hörnen,*/
+/* Lägger till en skugga bakom rutan. Det gör att artikeln ser ut att ligga ovanpå bakgrunden, overflow hiddden gör att artikeln följer de rundade hörnen*/
+
 .artikel h2 {
     text-align: center;
     padding: 20px;
     margin: 0;
 }
 
+/* padding är luften under rubriken, margin gör liknande tar bort standardmarginaler på websidan*/
+
 .artikel img {
     height: 450px;
     object-fit: cover;
 }
 
+/* height är att alla bilder är lika höga, cover är så den täcker hela rutan*/
+
 .artikeltext {
     padding: 25px;
     line-height: 1.7;
 }
+
+/* padding är luften så den inte går sida till sida, line height är mellanrummet mellan textraderna*/
 
 /* Gemensamma tillbakaknappen */
 
