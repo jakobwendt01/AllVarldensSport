@@ -1,0 +1,316 @@
+/* Gemensamt */
+
+body {
+    margin: 0;
+}
+
+/* Kanten runt allt*/
+
+nav {
+    text-align: center;
+}
+
+/* Centrerar texten*/
+
+img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Width är så bilden fyller hela området, max height är maximala höjden bilden får ha, object fit så bilden fyller området och delar av bilden kan försvinna*/
+
+h1,
+h2,
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+}
+
+/* Startsida*/
+
+body.index {
+    background: #f3f3f3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 100 = är att sidan fyller hela fönsret, flex fixade footern så det blev mellanrum under sportkorten*/
+
+
+.index .banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Padding gör bannern tjockare*/
+
+.index .banner h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+/*intro är introtexten*/
+.intro {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.sporter {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* display flex gör att korten är bredvid varandra, wrap e om skärmen e för smal flyttar korten ned*/
+
+.sportkort {
+    width: 350px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* border radius är rundade hörnen, overflow hidden är så bilden inte hamnar utanför boxen,box shadow är skuggan runt korten*/
+
+.sportkort img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.sportkort h2 {
+    text-align: center;
+}
+
+.sportkort a {
+    text-decoration: none;
+    color: black;
+}
+
+/* tar bort strecket under länken och gör färgen svart*/
+
+.sportkort:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* translate gör att kortet hoppar upp 5 pixlar när man håller över, transition gör att kortet glider upp o inte hoppar*/
+
+.footer {
+    background: black;
+    padding: 70px;
+    margin-top: auto;
+}
+
+/*Margin top auto skickar ner den till botten av sidan*/
+
+/* Den gemensamma artikel layouten*/
+
+.artikel {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.artikel h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.artikel img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.artikeltext {
+    padding: 25px;
+    line-height: 1.7;
+}
+
+/* Gemensamma tillbakaknappen */
+
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    opacity: 0.85;
+}
+
+/* Fotboll */
+
+body.fotboll {
+    background: #fff8dc;
+    font-family: Arial, sans-serif;
+}
+
+body.fotboll .banner {
+    background: #fecb00;
+    text-align: center;
+    padding: 15px;
+}
+
+body.fotboll .banner h1 {
+    color: #005293;
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+body.fotboll .back-btn {
+    background: #fecb00;
+    color: #005293;
+    border: 2px solid #005293;
+}
+
+body.fotboll #menu {
+    background: #fecb00;
+}
+
+body.fotboll #menuBtn {
+    background: #fecb00;
+    color: #005293;
+}
+
+body.fotboll #menu a:hover {
+    color: #005293;
+}
+
+/*BASKET*/
+
+body.basket {
+    background: #d6e4ff;
+}
+
+body.basket header {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #0f2a75, #1e3a8a);
+}
+
+body.basket h1 {
+    color: white;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+body.basket .back-btn {
+    background: #1e3a8a;
+    color: white;
+    border: 2px solid white;
+}
+
+body.basket #menu {
+    background: #1e3a8a;
+}
+
+body.basket #menuBtn {
+    background: #1e3a8a;
+    color: white;
+}
+
+body.basket #menu a {
+    color: white;
+}
+
+body.basket #menu a:hover {
+    color: black;
+}
+
+/* NFL */
+
+body.nfl {
+    background: #f4effa;
+}
+
+body.nfl header {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #4f2683, #6a3dbb);
+}
+
+body.nfl h1 {
+    color: white;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+body.nfl .back-btn {
+    background: #4f2683;
+    color: white;
+    border: 2px solid white;
+}
+
+body.nfl #menu {
+    background: #6a3dbb;
+}
+
+body.nfl #menuBtn {
+    background: #6a3dbb;
+    color: white;
+}
+
+body.nfl #menu a {
+    color: white;
+}
+
+body.nfl #menu a:hover {
+    color: black;
+}
+
+/* Menyknappen */
+
+#menuBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Menyn */
+
+#menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+#menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body.index #menu a,
+body.fotboll #menu a {
+    color: black;
+}
+
+#menu a:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+}
+
