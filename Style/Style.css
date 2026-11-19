@@ -159,6 +159,9 @@ body.footer {color: white;}
     font-weight: bold;
 }
 
+/* inline block att det blir mer som en knapp, padding blir kaoz utan den, knappen kan ha bakgrundsfärg, rundade hörn syns ordentligt
+padding ger luft inne i knappen,  text decoration tar bort blå lnk färgen, border radius rundar hörnen, font weight gör den fetstil*/
+
 .back-btn:hover {
     opacity: 0.85;
 }
@@ -170,6 +173,8 @@ body.fotboll {
     font-family: Arial, sans-serif;
 }
 
+/* bakgrudenn bakom rutan*/
+
 body.fotboll .banner {
     background: #fecb00;
     text-align: center;
@@ -180,7 +185,7 @@ body.fotboll .banner h1 {
     color: #005293;
     font-size: 55px;
     letter-spacing: 2px;
-    margin: 20px 0;
+    margin: 35px 0;
 }
 
 body.fotboll .back-btn {
